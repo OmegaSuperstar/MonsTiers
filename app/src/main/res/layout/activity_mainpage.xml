@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:backgroundTint="#EDEDED"
+    tools:context=".mainpage_activity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ui_background_top" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mticon_1" />
+
+    <TextView
+        android:id="@+id/textViewPlayerMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="$: 0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        android:fontFamily="@font/audiowide_regular"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewProfilePicButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_avatar" />
+
+    <ImageView
+        android:id="@+id/imageViewHamburger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hamburger_menu" />
+
+    <Button
+        android:id="@+id/buttonOpenPacks"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Open packs"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+
+    <Button
+        android:id="@+id/buttonBuyPacks"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#BC6274"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Buy packs"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOpenPacks" />
+
+    <Button
+        android:id="@+id/buttonCollection"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#9B597A"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Collection"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBuyPacks" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="336dp"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Featured:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCollection"
+        app:srcCompat="@drawable/divider_line" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ui_background_bottom" />
+
+    <ImageView
+        android:id="@+id/imageViewHomeButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_icon" />
+
+    <ImageView
+        android:id="@+id/imageViewInboxButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewHomeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mail_icon" />
+
+    <ImageView
+        android:id="@+id/imageViewStoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/imageViewHomeButton"
+        app:srcCompat="@drawable/shopping_cart_icon" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inbox"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewInboxButton"
+        app:layout_constraintStart_toStartOf="@+id/imageViewInboxButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewInboxButton"
+        android:fontFamily="@font/audiowide_regular"
+        />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewHomeButton"
+        app:layout_constraintStart_toStartOf="@+id/imageViewHomeButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewHomeButton"
+        android:fontFamily="@font/audiowide_regular"
+        />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewStoreButton"
+        app:layout_constraintStart_toStartOf="@+id/imageViewStoreButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewStoreButton"
+        android:fontFamily="@font/audiowide_regular"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewFeatured1"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/edittext_background" />
+
+    <ImageView
+        android:id="@+id/imageViewFeatured2"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFeatured3"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFeatured1"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFeatured1"
+        app:srcCompat="@drawable/edittext_background" />
+
+    <ImageView
+        android:id="@+id/imageViewFeatured3"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFeatured2"
+        app:srcCompat="@drawable/edittext_background" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/card_red" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/card_yellow" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:srcCompat="@drawable/card_blue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

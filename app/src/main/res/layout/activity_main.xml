@@ -53,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextLoginEmail" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLogin"
         android:layout_width="99dp"
         android:layout_height="55dp"
         android:layout_marginTop="50dp"
@@ -73,9 +73,10 @@
         android:fontFamily="@font/audiowide_regular"
         android:text="Don't have an account?"
         android:textColor="#000000"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
     <TextView
         android:id="@+id/textView2"
@@ -83,8 +84,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/audiowide_regular"
-        android:text="Register"
+        android:text="@string/register_text"
         android:textColor="#8C1616"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"

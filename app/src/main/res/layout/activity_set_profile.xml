@@ -33,7 +33,7 @@
       app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
   <ImageView
-      android:id="@+id/imageView4"
+      android:id="@+id/imageViewProfPicSet"
       android:layout_width="130dp"
       android:layout_height="130dp"
       android:layout_marginTop="16dp"
@@ -43,7 +43,7 @@
       app:srcCompat="@drawable/profile_pic_add" />
 
   <EditText
-      android:id="@+id/editTextText"
+      android:id="@+id/editTextSetNick"
       android:layout_width="300dp"
       android:layout_height="50dp"
       android:layout_marginTop="40dp"
@@ -56,10 +56,10 @@
       android:textColorHint="#7A6D6D"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+      app:layout_constraintTop_toBottomOf="@+id/imageViewProfPicSet" />
 
   <EditText
-      android:id="@+id/editTextText2"
+      android:id="@+id/editTextSetName"
       android:layout_width="300dp"
       android:layout_height="50dp"
       android:layout_marginTop="50dp"
@@ -71,10 +71,10 @@
       android:textColorHint="#7A6D6D"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+      app:layout_constraintTop_toBottomOf="@+id/editTextSetNick" />
 
   <EditText
-      android:id="@+id/editTextText3"
+      android:id="@+id/editTextSetSurname"
       android:layout_width="300dp"
       android:layout_height="50dp"
       android:layout_marginTop="24dp"
@@ -86,10 +86,10 @@
       android:textColorHint="#7A6D6D"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+      app:layout_constraintTop_toBottomOf="@+id/editTextSetName" />
 
   <Button
-      android:id="@+id/button2"
+      android:id="@+id/buttonSetSave"
       android:layout_width="99dp"
       android:layout_height="55dp"
       android:layout_marginTop="38dp"
@@ -99,5 +99,5 @@
       android:textSize="18dp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+      app:layout_constraintTop_toBottomOf="@+id/editTextSetSurname" />
 </androidx.constraintlayout.widget.ConstraintLayout>

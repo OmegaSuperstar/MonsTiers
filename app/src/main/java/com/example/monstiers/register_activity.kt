@@ -1,6 +1,8 @@
 package com.example.monstiers
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,10 @@ class register_activity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val registerEmail = findViewById<EditText>(R.id.editTextRegisterEmail)
+        val registerPassword = findViewById<EditText>(R.id.editTextLoginPassword)
+        val confirmPassword = findViewById<EditText>(R.id.editTextRegisterConfirmPassword)
+        val buttonRegister = findViewById<Button>(R.id.buttonRegister)
     }
 }

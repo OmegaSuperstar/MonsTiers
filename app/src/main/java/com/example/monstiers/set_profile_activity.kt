@@ -1,6 +1,9 @@
 package com.example.monstiers
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +19,11 @@ class set_profile_activity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val setProfPic = findViewById<ImageView>(R.id.imageViewProfPicSet)
+        val setNick = findViewById<EditText>(R.id.editTextSetNick)
+        val setName = findViewById<EditText>(R.id.editTextSetName)
+        val setSurname = findViewById<EditText>(R.id.editTextSetSurname)
+        val saveButton = findViewById<Button>(R.id.buttonSetSave)
     }
 }

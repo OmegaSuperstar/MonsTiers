@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MonsTiers</string>
+    <string name="register_text"><![CDATA[<u>Register</u>]]></string>
 </resources>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#EDEDED"
+    tools:context=".ProfileView_activity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ui_background_top" />
+
+    <ImageView
+        android:id="@+id/imageViewProfPic"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:srcCompat="@drawable/profile_avatar" />
+
+    <TextView
+        android:id="@+id/textViewNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Nickname"
+        android:textColor="#000000"
+        android:textSize="25dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProfPic" />
+
+    <TextView
+        android:id="@+id/textViewNameAndSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Name and surname"
+        android:textColor="#808080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNickname" />
+
+    <TextView
+        android:id="@+id/textViewLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Level: [current level]"
+        android:textColor="#A63838"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameAndSurname" />
+
+    <TextView
+        android:id="@+id/textViewPacksOpened"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Packs opened: 0000"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textViewCardsInCollection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Cards in collection: 0000"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPacksOpened" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCardsInCollection"
+        app:srcCompat="@drawable/divider_line" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ui_background_bottom" />
+
+    <ImageView
+        android:id="@+id/imageViewHomeButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_icon" />
+
+    <ImageView
+        android:id="@+id/imageViewInboxButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewHomeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mail_icon" />
+
+    <ImageView
+        android:id="@+id/imageViewStoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/imageViewHomeButton"
+        app:srcCompat="@drawable/shopping_cart_icon" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Inbox"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewInboxButton"
+        app:layout_constraintStart_toStartOf="@+id/imageViewInboxButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewInboxButton" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Home"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewHomeButton"
+        app:layout_constraintStart_toStartOf="@+id/imageViewHomeButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewHomeButton" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Store"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewStoreButton"
+        app:layout_constraintStart_toStartOf="@+id/imageViewStoreButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewStoreButton" />
+
+    <Button
+        android:id="@+id/buttonViewPlayerCollection"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#DD7575"
+        android:fontFamily="@font/audiowide_regular"
+        android:paddingLeft="30dp"
+        android:paddingRight="0dp"
+        android:text="View player collection"
+        android:textColor="@android:color/black"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <Button
+        android:id="@+id/buttonViewPlayerAchievements"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#BC6274"
+        android:fontFamily="@font/audiowide_regular"
+        android:paddingLeft="30dp"
+        android:paddingRight="0dp"
+        android:text="View player achievements"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonViewPlayerCollection" />
+
+    <Button
+        android:id="@+id/buttonReviewPlayerCard"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#9B597A"
+        android:fontFamily="@font/audiowide_regular"
+        android:paddingLeft="30dp"
+        android:paddingRight="0dp"
+        android:text="Reviev player's card"
+        android:textColor="@android:color/black"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonViewPlayerAchievements" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:srcCompat="@drawable/card_red" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:srcCompat="@drawable/card_yellow" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:srcCompat="@drawable/card_blue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
