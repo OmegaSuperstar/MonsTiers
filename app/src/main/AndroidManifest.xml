@@ -13,6 +13,21 @@
         android:theme="@style/Theme.MonsTiers"
         tools:targetApi="31">
         <activity
+            android:name=".write_mail_activity"
+            android:exported="false" />
+        <activity
+            android:name=".share_card_activity"
+            android:exported="false" />
+        <activity
+            android:name=".card_review_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Inbox_activity"
+            android:exported="false" />
+        <activity
+            android:name=".card_collection_activity"
+            android:exported="false" />
+        <activity
             android:name=".pack_select_activity"
             android:exported="false" />
         <activity

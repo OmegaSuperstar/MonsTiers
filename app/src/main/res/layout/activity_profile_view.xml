@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EDEDED"
     android:backgroundTint="#EDEDED"
     tools:context=".ProfileView_activity">
 
@@ -176,7 +177,7 @@
         android:id="@+id/buttonViewPlayerCollection"
         android:layout_width="300dp"
         android:layout_height="65dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#DD7575"
         android:fontFamily="@font/audiowide_regular"
         android:paddingLeft="30dp"
@@ -192,7 +193,7 @@
         android:id="@+id/buttonViewPlayerAchievements"
         android:layout_width="300dp"
         android:layout_height="65dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#BC6274"
         android:fontFamily="@font/audiowide_regular"
         android:paddingLeft="30dp"
@@ -208,7 +209,7 @@
         android:id="@+id/buttonReviewPlayerCard"
         android:layout_width="300dp"
         android:layout_height="65dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#9B597A"
         android:fontFamily="@font/audiowide_regular"
         android:paddingLeft="30dp"
@@ -225,7 +226,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="57dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="21dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView11"
         app:srcCompat="@drawable/card_red" />
@@ -235,7 +236,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="9dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView13"
         app:srcCompat="@drawable/card_yellow" />
@@ -245,9 +246,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="9dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView14"
         app:srcCompat="@drawable/card_blue" />
+
+    <Button
+        android:id="@+id/buttonShareCard"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/audiowide_regular"
+        android:backgroundTint="#A73953"
+        android:paddingLeft="30dp"
+        android:paddingRight="0dp"
+        android:text="Share a card"
+        android:textColor="@android:color/black"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReviewPlayerCard" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:srcCompat="@drawable/card_green" />
+
+    <TextView
+        android:id="@+id/textViewLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/audiowide_regular"
+        android:text=" Log out >"
+        android:textColor="#A63838"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "23594363700",
+    "project_id": "monstiers-1e01a",
+    "storage_bucket": "monstiers-1e01a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23594363700:android:bcba89a2a3a5b890449361",
+        "android_client_info": {
+          "package_name": "com.example.monstiers"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD77sD-UTC5sreKAMn1IkJka9M_szur0xo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/ui_background_top" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imageViewLogo"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginTop="32dp"
@@ -37,7 +37,7 @@
         android:text="$: 0000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
         android:fontFamily="@font/audiowide_regular"
         />
 
@@ -47,7 +47,7 @@
         android:layout_height="70dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLogo"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile_avatar" />
 
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewLogo"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/hamburger_menu" />
 
@@ -70,7 +70,7 @@
         android:text="Open packs"
         android:textColor="@android:color/black"
         android:textSize="30dp"
-        android:background="@drawable/button_background"
+        android:backgroundTint="#DD7575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
@@ -210,6 +210,7 @@
         android:layout_height="150dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:srcCompat="@drawable/edittext_background" />
@@ -261,5 +262,74 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView18"
         app:srcCompat="@drawable/card_blue" />
+
+    <TextView
+        android:id="@+id/textViewFeatured1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Featured #1"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFeatured1"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFeatured1"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFeatured1" />
+
+    <TextView
+        android:id="@+id/textViewFeatured2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Featured #2"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFeatured1"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFeatured2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFeatured2"
+        app:layout_constraintTop_toTopOf="@+id/textViewFeatured1" />
+
+    <TextView
+        android:id="@+id/textViewFeatured3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Featured #3"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFeatured2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFeatured3"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFeatured3"
+        app:layout_constraintTop_toTopOf="@+id/textViewFeatured2" />
+
+    <TextView
+        android:id="@+id/textViewFeaturedPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Price: 0000"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFeatured1"
+        app:layout_constraintStart_toStartOf="@+id/textViewFeatured1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFeatured1" />
+
+    <TextView
+        android:id="@+id/textViewFeaturedPrice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Price: 0000"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFeatured2"
+        app:layout_constraintStart_toStartOf="@+id/textViewFeatured2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFeatured2" />
+
+    <TextView
+        android:id="@+id/textViewFeaturedPrice3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="Price: 0000"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFeatured3"
+        app:layout_constraintStart_toStartOf="@+id/textViewFeatured3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFeatured3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

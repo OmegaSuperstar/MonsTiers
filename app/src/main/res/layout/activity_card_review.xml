@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#EDEDED"
     android:backgroundTint="#EDEDED"
-    tools:context=".pack_select_activity">
+    tools:context=".card_review_activity">
 
     <ImageView
         android:id="@+id/imageView5"
@@ -129,90 +129,5 @@
         app:layout_constraintEnd_toEndOf="@+id/imageViewStoreButton"
         app:layout_constraintStart_toStartOf="@+id/imageViewStoreButton"
         app:layout_constraintTop_toBottomOf="@+id/imageViewStoreButton" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/audiowide_regular"
-        android:text="Select a pack to open:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-    <ImageView
-        android:id="@+id/imageViewCardPack"
-        android:layout_width="200dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:srcCompat="@drawable/edittext_background" />
-
-    <Button
-        android:id="@+id/buttonOpenPack"
-        android:layout_width="157dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#000000"
-        android:fontFamily="@font/audiowide_regular"
-        android:text="Buy and open"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewCardPack" />
-
-    <ImageView
-        android:id="@+id/imageViewArrowRight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/buttonOpenPack"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageViewCardPack"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/arrow_right" />
-
-    <ImageView
-        android:id="@+id/imageViewArrowLeft"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/buttonOpenPack"
-        app:layout_constraintEnd_toStartOf="@+id/imageViewCardPack"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/arrow_left" />
-
-    <TextView
-        android:id="@+id/textViewPackCost"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/audiowide_regular"
-        android:text="Cost: 0000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonOpenPack"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewCardPack" />
-
-    <TextView
-        android:id="@+id/textViewPackName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:text="Pack name"
-        app:layout_constraintBottom_toBottomOf="@+id/imageViewCardPack"
-        app:layout_constraintEnd_toStartOf="@+id/imageViewArrowRight"
-        app:layout_constraintStart_toEndOf="@+id/imageViewArrowLeft"
-        app:layout_constraintTop_toTopOf="@+id/imageViewCardPack" />
-
-    <TextView
-        android:id="@+id/textViewCardCount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Cards inside: 0000"
-        app:layout_constraintEnd_toEndOf="@+id/textViewPackName"
-        app:layout_constraintStart_toStartOf="@+id/textViewPackName"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPackName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
