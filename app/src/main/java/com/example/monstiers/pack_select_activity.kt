@@ -70,11 +70,13 @@ class pack_select_activity : AppCompatActivity() {
                 packList.clear()
                 for (doc in result) {
                     val pack = Pack(
+                        id = doc.id,
                         packName = doc.getString("packName") ?: "Unnamed Pack",
                         cardCount = (doc.getLong("cardCount") ?: 0L).toInt(),
                         price = doc.getLong("price") ?: 0L,
                         cardIds = doc.get("cardIds") as? List<String> ?: emptyList()
                     )
+
                     packList.add(pack)
                 }
 
@@ -123,58 +125,13 @@ class pack_select_activity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            userRef.get().addOnSuccessListener { doc ->
-                val currentMoney = doc.getLong("money") ?: 0L
-
-                if (currentMoney < selectedPack.price) {
-                    Toast.makeText(this, "Not enough money!", Toast.LENGTH_SHORT).show()
-                    return@addOnSuccessListener
-                }
-
-                val ownedCards = (doc.get("ownedCards") as? List<String>)?.toMutableList() ?: mutableListOf()
-                val packsOpened = doc.getLong("packsOpened") ?: 0L
-                val cardsOwned = doc.getLong("cardsOwned") ?: 0L
-
-                val newCards = selectedPack.cardIds.shuffled().take(2)
-
-                ownedCards.addAll(newCards)
-
-                val newCardsOwnedCount = cardsOwned + newCards.size
-                val newLevel = (newCardsOwnedCount / 5).toInt()  // Integer division
-
-                userRef.update(
-                    mapOf(
-                        "money" to (currentMoney - selectedPack.price),
-                        "ownedCards" to ownedCards,
-                        "packsOpened" to packsOpened + 1,
-                        "cardsOwned" to newCardsOwnedCount,
-                        "level" to newLevel
-                    )
-                ).addOnSuccessListener {
-                    updateMoneyText(currentMoney - selectedPack.price)
-                    Toast.makeText(this, "You received: ${newCards.joinToString(", ")}", Toast.LENGTH_LONG).show()
-
-                    // Now update the numbersOpened for the selected pack
-                    val packRef = firestore.collection("packs").document(selectedPack.packName)
-                    packRef.update("numbersOpened", FieldValue.increment(1))
-                        .addOnSuccessListener {
-                            // Successfully updated numbersOpened
-                        }
-                        .addOnFailureListener {
-                            Toast.makeText(this, "Failed to update pack data", Toast.LENGTH_SHORT).show()
-                        }
-                }.addOnFailureListener {
-                    Toast.makeText(this, "Failed to update user data", Toast.LENGTH_SHORT).show()
-                }
-
-            }.addOnFailureListener {
-                Toast.makeText(this, "Failed to retrieve user data", Toast.LENGTH_SHORT).show()
-            }
+            val intent = Intent(this, pack_open_activity::class.java)
+            intent.putExtra("packId", selectedPack.id)
+            intent.putExtra("packName", selectedPack.packName)
+            intent.putExtra("packPrice", selectedPack.price)
+            intent.putStringArrayListExtra("packCardIds", ArrayList(selectedPack.cardIds))
+            startActivity(intent)
         }
-
-
-
-
 
         homeImage.setOnClickListener {
             startActivity(Intent(this, mainpage_activity::class.java))
